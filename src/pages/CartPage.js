@@ -1,14 +1,20 @@
 import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import { CartContext } from "../context/CartContext";
 import "../styles/CartPage.css";
 
 const CartPage = () => {
   const { cartItems, removeFromCart } = useContext(CartContext);
+  const navigate = useNavigate(); // Initialize navigate for redirect
+
+  const handleBuyNow = () => {
+    // Redirect to CheckoutPage
+    navigate("/checkout");
+  };
 
   return (
     <div className="cart-page-container">
       <h1>Your Cart</h1>
-      {/* Display message if cart is empty */}
       {cartItems.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
@@ -29,6 +35,15 @@ const CartPage = () => {
           ))}
         </div>
       )}
+      {/* Total Price and Buy Now Section */}
+      <div className="cart-total">
+        <h2>
+          Total: {cartItems.reduce((total, item) => total + item.price, 0)} kr
+        </h2>
+        <button className="buy-now-btn" onClick={handleBuyNow}>
+          Buy Now
+        </button>
+      </div>
     </div>
   );
 };
