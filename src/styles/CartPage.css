@@ -3,21 +3,19 @@
 }
 
 .cart-icon {
-    position: relative; 
-    text-decoration: none; 
-  }
-  
-  .cart-count {
-    position: absolute;
-    top: -10px; 
-    right: -10px; 
-    background: red; 
-    color: white; 
-    border-radius: 50%; 
-    padding: 5px; 
-  }
-  
+  position: relative;
+  text-decoration: none;
+}
 
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+}
 
 .cart-items {
   display: flex;
@@ -56,8 +54,36 @@ button {
   border: none;
   padding: 5px 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 button:hover {
   background-color: #d63636;
+}
+
+.cart-total {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* Stacks h2 and button vertically */
+  align-items: center; /* Centers both h2 and button horizontally */
+  justify-content: center; /* Ensures the whole section is centered vertically */
+}
+
+.cart-total h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px; /* Adds some space below the total price */
+}
+
+.buy-now-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Space between price and button */
+}
+
+.buy-now-btn:hover {
+  background-color: #218838;
 }
