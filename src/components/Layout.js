@@ -1,16 +1,17 @@
+// src/components/Layout.js
 import React from "react";
-import Header from "./Header"; // Import Header component
-import Footer from "./Footer"; // Import Footer component
+import Header from "./Header";
+import Footer from "./Footer";
+import "./Layout";
 
 const Layout = ({ children }) => {
+  console.log(children);
   return (
-    <>
+    <div className="layout">
       <Header />
-      <main>
-        {children} {/* This is where the content of each page will go */}
-      </main>
+      <main className="main-content">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -1,13 +1,33 @@
+// src/App.js
 import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
+import HomePage from "./pages/HomePage";
+import ProductPage from "./pages/ProductPage";
+import CartPage from "./pages/CartPage";
+import { CartProvider } from "./context/CartContext";
+import CheckoutPage from "./pages/CheckoutPage";
+import ContactPage from "./pages/ContactPage";
+import AllProductsPage from "./pages/AllProductsPage";
 
-function App() {
+const App = () => {
   return (
-    <Layout>
-      <h1>Welcome to My eCommerce Store!</h1>
-      <p>Browse our products and shop with us!</p>
-    </Layout>
+    <CartProvider>
+      {" "}
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/products" element={<AllProductsPage />} />
+            <Route path="/product/:id" element={<ProductPage />} />
+            <Route path="/cart" element={<CartPage />} />
+            <Route path="/checkout" element={<CheckoutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </CartProvider>
   );
-}
+};
 
 export default App;
