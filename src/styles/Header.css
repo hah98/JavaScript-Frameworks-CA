@@ -6,7 +6,7 @@ header {
   padding: 0 20px;
   display: flex;
   align-items: center;
-  z-index: 1000; /* Ensure it appears above content */
+  z-index: 1000;
 }
 
 .header-container {
