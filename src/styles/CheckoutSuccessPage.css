@@ -1,0 +1,42 @@
+.checkout-success-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  text-align: center;
+  background-image: url("../assets/images/nicolas-j-leclercq-kiNAwO1nT7k-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  color: white;
+}
+
+.success-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  margin-top: 10px;
+}
+
+a {
+  color: #fff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
