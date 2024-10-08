@@ -1,7 +1,10 @@
 /* src/styles/CheckoutPage.css */
 .checkout-page-container {
   padding: 20px;
-  text-align: center;
+  text-align: center; /* This can remain for text alignment */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
 }
 
 .checkout-items {

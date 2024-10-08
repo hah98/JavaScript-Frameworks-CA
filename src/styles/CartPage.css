@@ -5,6 +5,7 @@
 .cart-icon {
   position: relative;
   text-decoration: none;
+  color: black;
 }
 
 .cart-count {
@@ -64,14 +65,14 @@ button:hover {
 .cart-total {
   margin-top: 20px;
   display: flex;
-  flex-direction: column; /* Stacks h2 and button vertically */
-  align-items: center; /* Centers both h2 and button horizontally */
-  justify-content: center; /* Ensures the whole section is centered vertically */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cart-total h2 {
   font-size: 1.5em;
-  margin-bottom: 20px; /* Adds some space below the total price */
+  margin-bottom: 20px;
 }
 
 .buy-now-btn {
@@ -81,7 +82,7 @@ button:hover {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 20px; /* Space between price and button */
+  margin-top: 20px;
 }
 
 .buy-now-btn:hover {
