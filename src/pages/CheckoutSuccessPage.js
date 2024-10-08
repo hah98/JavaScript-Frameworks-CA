@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../styles/CheckoutSuccessPage.css";
 
 const CheckoutSuccessPage = () => {
-  const navigate = useNavigate(); // Initialize navigate for redirection
+  const navigate = useNavigate();
 
   const handleReturnToShop = () => {
     navigate("/products"); // Redirect to the products page

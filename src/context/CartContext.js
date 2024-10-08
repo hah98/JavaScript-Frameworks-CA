@@ -8,14 +8,12 @@ export const CartProvider = ({ children }) => {
 
   const addToCart = (product) => {
     setCartItems((prevItems) => [...prevItems, product]);
-    // Additional logic for handling duplicates, quantities, etc., will go here
   };
 
   const removeFromCart = (id) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   };
 
-  // Define the clearCart function
   const clearCart = () => {
     setCartItems([]);
   };
