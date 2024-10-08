@@ -123,11 +123,11 @@ header {
 /* --- Responsive styles --- */
 @media (max-width: 768px) {
   .hamburger {
-    display: flex; 
+    display: flex;
   }
 
   .nav-menu ul {
-    display: none; 
+    display: none;
   }
 
   .nav-menu.open ul {

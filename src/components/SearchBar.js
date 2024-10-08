@@ -22,7 +22,7 @@ const SearchBar = ({ products }) => {
   // Navigate to the product page when an item is clicked
   const handleProductClick = (productId) => {
     navigate(`/product/${productId}`);
-    setSearchTerm(""); 
+    setSearchTerm("");
   };
 
   return (
