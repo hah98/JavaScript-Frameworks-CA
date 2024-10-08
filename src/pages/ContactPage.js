@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/ContactPage.css"; // Ensure this path points to your actual CSS file
+import "../styles/ContactPage.css";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -40,8 +40,20 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     if (validate()) {
-      console.log(formData);
+      // Validate the form data
+      console.log(formData); // Log form data to the console
+      alert("Your message has been sent!");
+
+      // Reset form data to clear the form fields
+      setFormData({
+        firstName: "",
+        email: "",
+        message: "",
+      });
+
+      setErrors({});
     }
   };
 
