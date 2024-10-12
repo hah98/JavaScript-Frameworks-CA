@@ -1,6 +1,10 @@
 # eCommerce Store 🛒
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/76578210-c851-4321-8b36-301320e51040/deploy-status)](https://app.netlify.com/sites/jsframeworkcahah98/deploys)
+![GitHub repo size](https://img.shields.io/github/repo-size/hah98/JavaScript-Frameworks-CA)
+![GitHub top language](https://img.shields.io/github/languages/top/hah98/JavaScript-Frameworks-CA)
+![GitHub last commit](https://img.shields.io/github/last-commit/hah98/JavaScript-Frameworks-CA)
+![GitHub license](https://img.shields.io/github/license/hah98/JavaScript-Frameworks-CA)
 
 Welcome to the **eCommerce Store**, a fully responsive online shopping platform built with **React**. It includes product listing, cart functionality, checkout, and more to demonstrate proficiency in frontend development.
 
