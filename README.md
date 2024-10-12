@@ -6,6 +6,11 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/hah98/JavaScript-Frameworks-CA)
 ![GitHub license](https://img.shields.io/github/license/hah98/JavaScript-Frameworks-CA)
 
+![Skjermbilde 2024-10-12 kl  9 43 35 pm](https://github.com/user-attachments/assets/58c60932-0745-47d9-badb-0862d3585d9f)
+
+![Skjermbilde 2024-10-12 kl  9 43 57 pm](https://github.com/user-attachments/assets/ca4b34a7-8f1c-4ff5-95a9-f86eaddfd619)
+
+
 Welcome to the **eCommerce Store**, a fully responsive online shopping platform built with **React**. It includes product listing, cart functionality, checkout, and more to demonstrate proficiency in frontend development.
 
 ## 📜 Description
