@@ -90,8 +90,7 @@ To retrieve individual product details, append the product ID to the URL (e.g., 
 
 Feel free to reach out if you have any questions or suggestions:
 
-- **GitHub**: [your-username](https://github.com/your-username)
-- **Email**: your.email@example.com
+- **GitHub**: [hah98](https://github.com/hah98)
 
 ---
 
