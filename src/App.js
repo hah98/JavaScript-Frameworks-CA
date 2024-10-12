@@ -7,6 +7,7 @@ import ProductPage from "./pages/ProductPage";
 import CartPage from "./pages/CartPage";
 import { CartProvider } from "./context/CartContext";
 import CheckoutPage from "./pages/CheckoutPage";
+import CheckoutSuccessPage from "./pages/CheckoutSuccessPage";
 import ContactPage from "./pages/ContactPage";
 import AllProductsPage from "./pages/AllProductsPage";
 
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/cart" element={<CartPage />} />
             <Route path="/checkout" element={<CheckoutPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/checkout-success" element={<CheckoutSuccessPage />} />
           </Routes>
         </Layout>
       </Router>

@@ -1,17 +1,41 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { CartContext } from "../context/CartContext";
 import CartIcon from "../components/CartIcon";
 import SearchIcon from "../components/SearchIcon";
+import SearchBar from "../components/SearchBar"; // Assuming you have a SearchBar component
 import "../styles/Header.css";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
   const { cartItems } = useContext(CartContext);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [showSearchBar, setShowSearchBar] = useState(false); // New state for search bar
+  const [products, setProducts] = useState([]); // State to hold products for search functionality
 
+  // Toggle menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  // Toggle search bar visibility
+  const toggleSearch = () => {
+    setShowSearchBar(!showSearchBar);
+  };
+
+  // Fetch products for search functionality
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch("https://v2.api.noroff.dev/online-shop");
+        const data = await response.json();
+        setProducts(data.data);
+      } catch (error) {
+        console.error("Error fetching products:", error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   return (
     <header className="header-container">
@@ -44,10 +68,14 @@ const Header = () => {
       </nav>
 
       <div className="icons-container">
-        <SearchIcon />
+        <SearchIcon toggleSearch={toggleSearch} />{" "}
+        {/* Pass toggleSearch here */}
         <CartIcon />
         {cartItems.length > 0 && <span>{cartItems.length}</span>}
       </div>
+
+      {/* Conditionally render SearchBar */}
+      {showSearchBar && <SearchBar products={products} />}
     </header>
   );
 };

@@ -1,0 +1,31 @@
+/* SearchBar.css */
+.search-bar {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  z-index: 10;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-results {
+  background-color: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-results li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.search-results li:hover {
+  background-color: #f0f0f0;
+}

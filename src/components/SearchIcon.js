@@ -1,9 +1,8 @@
 import React from "react";
 
-const SearchIcon = () => {
+const SearchIcon = ({ toggleSearch }) => {
   return (
-    <div>
-      {" "}
+    <div onClick={toggleSearch} style={{ cursor: "pointer" }}>
       <i className="fa-solid fa-magnifying-glass"></i>
     </div>
   );
