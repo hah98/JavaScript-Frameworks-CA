@@ -1,4 +1,4 @@
-# eCommerce Store 🛒
+# 🛒 JavaScript Frameworks CA: eCommerce Store
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/76578210-c851-4321-8b36-301320e51040/deploy-status)](https://app.netlify.com/sites/jsframeworkcahah98/deploys)
 ![GitHub repo size](https://img.shields.io/github/repo-size/hah98/JavaScript-Frameworks-CA)
@@ -6,10 +6,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/hah98/JavaScript-Frameworks-CA)
 ![GitHub license](https://img.shields.io/github/license/hah98/JavaScript-Frameworks-CA)
 
-![Skjermbilde 2024-10-12 kl  9 43 35 pm](https://github.com/user-attachments/assets/58c60932-0745-47d9-badb-0862d3585d9f)
-
-![Skjermbilde 2024-10-12 kl  9 43 57 pm](https://github.com/user-attachments/assets/ca4b34a7-8f1c-4ff5-95a9-f86eaddfd619)
-
+![Skjermbilde 2024-10-12 kl 9 43 35 pm](https://github.com/user-attachments/assets/58c60932-0745-47d9-badb-0862d3585d9f)
+![Skjermbilde 2024-10-12 kl 9 43 57 pm](https://github.com/user-attachments/assets/ca4b34a7-8f1c-4ff5-95a9-f86eaddfd619)
 
 Welcome to the **eCommerce Store**, a fully responsive online shopping platform built with **React**. It includes product listing, cart functionality, checkout, and more to demonstrate proficiency in frontend development.
 
@@ -23,7 +21,7 @@ This project is an eCommerce web application designed like a small online shop. 
 - ✅ **Checkout Success Page**: Confirms successful order placement and clears the cart.
 - 📝 **Contact Page**: Features a contact form with client-side validation.
 - 🔍 **Search Functionality**: Auto-complete search bar that helps users find products quickly in the header.
-  
+
 ### Pages
 
 - **Homepage**: Lists all available products and allows users to filter them using a search bar.
@@ -42,22 +40,42 @@ This project is built using the following technologies:
 - 🛍️ **Context API**
 - 🌐 **Fetch API**
 
-## 🚀 Live Demo
+## 🚀 Getting Started / Viewing the Project
 
-You can view the live version of the project here:
+View the website: [eCommerce Store](https://jsframeworkcahah98.netlify.app/)
 
-[eCommerce Store](https://jsframeworkcahah98.netlify.app/)
+### 📦 Installing
 
-## 📦 Getting Started
+How to clone the repository:
 
-To run this project locally, follow these steps:
+1. Clone the repo:
 
-### 🔽 Cloning the Repository
+   ```bash
+   git clone git@github.com:hah98/Javascript-Framework-CA.git
+   ```
 
-```bash
-git clone git@github.com:hah98/Javascript-Framework-CA.git
-cd ecommerce-store
-```
+2. Open the project folder in [Visual Studio Code (VSCode)](https://code.visualstudio.com/):
+   
+   - If you don't have VSCode installed, download and install it from the link above.
+   - Open VSCode and use the **File** > **Open Folder** option to open the cloned repository.
+
+3. Install the project dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+5. Use the "Go Live" feature in VSCode (optional):
+   
+   - Install the "Live Server" extension in VSCode if needed.
+   - Right-click on the `index.html` file and select **Open with Live Server** to view the project in your browser.
+
 ## 📄 Features
 
 - **Product List**: Displays all products with a search bar for filtering.
@@ -67,16 +85,45 @@ cd ecommerce-store
 - **Form Validation**: Built-in form validation on the contact page.
 - **Responsive Design**: Fully responsive for desktop, tablet, and mobile screens.
 
-## 📑 How It Works
+## 🤝 Contributing
 
-### Product Search
-Users can search for products using the search bar on the homepage. As the user types, the list of products filters based on matching titles. This is achieved by fetching product data from the API and filtering the results based on the user's input.
+If you'd like to contribute to this project, follow these steps:
 
-### Cart Functionality
-Products can be added to the cart from the product page. The cart icon in the header shows the number of items in the cart. The cart contents can be viewed and managed on the Cart page, where users can also proceed to checkout.
+1. **Fork the repository**:
+   
+   - Click the "Fork" button at the top-right corner of this repository to create your copy.
 
-### Contact Form
-The contact page features a form where users can input their details (Full Name, Email, Subject, and Message). Form validation ensures all fields are filled correctly before submission.
+2. **Clone your forked repository**:
+
+   ```bash
+   git clone https://github.com/your-username/Javascript-Framework-CA.git
+   ```
+
+3. **Create a new branch** for your changes:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+4. **Make your changes** and commit them:
+
+   ```bash
+   git add .
+   git commit -m "Add a meaningful commit message"
+   ```
+
+5. **Push your changes** to your forked repository:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+6. **Create a Pull Request**:
+
+   - Navigate to the original repository.
+   - Click the "New Pull Request" button and provide a description of your changes.
+
+I will review your contributions and merge them if they align with the project's goals. 😊
 
 ## 🖥️ API Reference
 
